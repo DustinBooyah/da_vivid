@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Google News Search</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" media="screen" href="style.css" />
+<style media="screen" type="text/css">/*<![CDATA[*/@import 'style.css';/*]]>*/</style>
+<style type="text/css">#header,#author,#menu,#footer {font-family:"GeosansLight"}</style>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script>
+  (function() {
+    var cx = '017620146857665417139:hi6v2skixxw';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<!--[if lte IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" media="screen" href="/ie.css" />
+<![endif]-->
+</head>
+<body> 
+	<div id="container">
+	
+		<header id="header">
+			<a href="index.html">A place to search Google News.</a>
+			<div id="subhead">
+			(Other than Google.)
+			</div>
+			<nav id="menu">
+				<ul>
+				<li><a href="contact.html">Contact</a></li>
+				<li class="selected"><a href="how.html">Resources</a></li>
+				<li><a href="index.html">Main</a></li>
+				</ul>
+			</nav>
+			<p id="features">
+			Google Custom Search - www.google.com/cse</br>
+			Bones Starter Theme (to show plugin functions) http://www.themble.com/bones</br>
+			AJAX API Playground - http://code.google.com/apis/ajax/playground/
+			</p>
+		</header>
+		<div class="clr"></div>
+		
+		<section>
+			<div id="content">
+			<gcse:search></gcse:search>
+			</div>
+		</section>
+		<div class="clr"></div>
+		
+		<footer id="footer">
+			<p>
+			Copyright 2012 | Dustin Aguilar
+			</p>
+		</footer>
+		<div class="clr"></div>
+		
+	</div>
+</body> 
+</html> 
